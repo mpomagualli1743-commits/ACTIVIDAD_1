@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Tickets Registrados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Help Desk Data Center</h1>
+            <p>Gestión y Seguimiento de Tickets</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Incidente</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section class="card">
+                <h2>Panel de Tickets</h2>
+                <p>
+                    Visualice el estado actual de los incidentes registrados en el
+                    Data Center institucional.
+                </p>
+            </section>
+
+            <section>
+                <h2>Resumen General</h2>
+                <div class="dashboard-grid">
+                    <article class="card estadistica">
+                        <h3>📂 Total</h3>
+                        <p class="numero">60</p>
+                    </article>
+
+                    <article class="card estadistica">
+                        <h3>🟢 Resueltos</h3>
+                        <p class="numero">42</p>
+                    </article>
+
+                    <article class="card estadistica">
+                        <h3>🟡 En Proceso</h3>
+                        <p class="numero">15</p>
+                    </article>
+
+                    <article class="card estadistica">
+                        <h3>🔴 Críticos</h3>
+                        <p class="numero">3</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Consultar Tickets</h2>
+                <input
+                    type="text"
+                    placeholder="Buscar por ID, categoría o técnico...">
+            </section>
+
+            <section class="card">
+                <h2>Listado de Incidentes</h2>
+                <div class="tabla-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Fecha</th>
+                                <th>Incidente</th>
+                                <th>Categoría</th>
+                                <th>Prioridad</th>
+                                <th>Estado</th>
+                                <th>Técnico</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>INC-001</td>
+                                <td>01/06/2026</td>
+                                <td>Servidor sin conexión</td>
+                                <td>Red</td>
+
+                                <td>
+                                    <span class="badge badge-alta">
+                                        Alta
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-media">
+                                        Abierto
+                                    </span>
+                                </td>
+
+                                <td>Carlos Pérez</td>
+
+                                <td>
+                                    <button class="btn btn-primario">
+                                        Ver
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>INC-002</td>
+                                <td>01/06/2026</td>
+                                <td>Error en disco duro</td>
+                                <td>Hardware</td>
+
+                                <td>
+                                    <span class="badge badge-media">
+                                        Media
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-baja">
+                                        En Proceso
+                                    </span>
+                                </td>
+                                <td>María López</td>
+
+                                <td>
+                                    <button class="btn btn-secundario">
+                                        Editar
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>INC-003</td>
+                                <td>02/06/2026</td>
+                                <td>Falla del sistema operativo</td>
+                                <td>Software</td>
+
+                                <td>
+                                    <span class="badge badge-alta">
+                                        Alta
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-baja">
+                                        Resuelto
+                                    </span>
+                                </td>
+
+                                <td>Juan Andrade</td>
+                                <td>
+                                    <button class="btn btn-peligro">
+                                        Cerrar
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Estados del Sistema</h2>
+                <ul>
+                    <li>
+                        <strong>Abierto:</strong>
+                        Ticket recién registrado.
+                    </li>
+
+                    <li>
+                        <strong>En Proceso:</strong>
+                        El técnico está trabajando en el incidente.
+                    </li>
+
+                    <li>
+                        <strong>Resuelto:</strong>
+                        El incidente fue solucionado.
+                    </li>
+                </ul>
+            </section>
+
+            <div class="alerta alerta-aviso">
+
+                ⚠ Existen tickets pendientes de revisión por parte del departamento técnico.
+            </div>
+
+        </main>
+
+        <footer>
+            <p>
+                © 2026 Sistema Help Desk - Universidad Técnica de Manabí
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
