@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Desk - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+
+<header>
+    <h1>Help Desk Data Center</h1>
+    <p>
+        Sistema de Gestión de Incidentes Tecnológicos
+    </p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar Incidente</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="card">
+    <h2>Bienvenido al Sistema</h2>
+    <div class="alerta alerta-aviso">
+        Sistema destinado al registro, seguimiento y control de incidentes tecnológicos del Data Center institucional.
+    </div>
+</section>
+
+<section>
+    <h2>Resumen General</h2>
+    <div class="dashboard-grid">
+        <article class="card estadistica">
+            <h3>📂 Tickets Abiertos</h3>
+            <p class="numero">15</p>
+        </article>
+
+        <article class="card estadistica">
+            <h3>✅ Tickets Resueltos</h3>
+            <p class="numero">42</p>
+        </article>
+
+        <article class="card estadistica">
+            <h3>🚨 Incidentes Críticos</h3>
+            <p class="numero">3</p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2>Categorías de Incidentes</h2>
+    <div class="dashboard-grid">
+        <article class="card">
+            <h3>💻 Hardware</h3>
+            <p>
+                Fallos físicos en servidores, discos duros, memorias y demás componentes tecnológicos.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>🌐 Red</h3>
+            <p>
+                Problemas de conectividad, direccionamiento IP y acceso a los servicios institucionales.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>⚙️ Software</h3>
+            <p>
+                Errores relacionados con sistemas operativos, aplicaciones y plataformas institucionales.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Acciones Rápidas</h2>
+    <div class="acciones">
+        <button class="btn btn-primario">
+            Registrar Incidente
+        </button>
+
+        <button class="btn btn-secundario">
+            Consultar Tickets
+        </button>
+
+        <button class="btn btn-peligro">
+            Eliminar Registro
+        </button>
+    </div>
+</section>
+</main>
+<footer>
+<p>
+© 2026 Sistema Help Desk - Universidad Técnica de Manabí
+</p>
+</footer>
+</div>
+</body>
+</html>
