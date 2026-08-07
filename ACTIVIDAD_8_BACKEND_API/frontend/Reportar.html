@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Reportar Incidente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<header>
+    <h1>Help Desk Data Center</h1>
+    <p>Registro de Incidentes Tecnológicos</p>
+</header>
+
+<nav>
+
+    <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Reportes.html">Reportar Incidente</a></li>
+        <li><a href="Tickets.html">Tickets</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section class="card">
+        <h2>Formulario de Registro de Incidentes</h2>
+        <article>
+            <h3>Información General</h3>
+            <p>
+                Complete la siguiente información para registrar
+                un incidente relacionado con Hardware, Red o Software.
+            </p>
+        </article>
+    </section>
+
+    <section class="card">
+        <h2>Datos del Incidente</h2>
+        <form action="#" method="post">
+    <div class="form-grid">
+        <div class="form-group">
+            <label for="usuario">👤 Usuario que Reporta</label>
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha">📅 Fecha del Incidente</label>
+            <input
+                type="date"
+                id="fecha"
+                name="fecha"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="titulo">📝 Título del Incidente</label>
+            <input
+                type="text"
+                id="titulo"
+                name="titulo"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">📂 Categoría</label>
+            <select
+                id="categoria"
+                name="categoria"
+                required>
+                <option value="">Seleccione una categoría</option>
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Red</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>⚠ Nivel de Prioridad</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="prioridad" value="Alta" required>
+                Alta
+            </label>
+
+            <label>
+                <input type="radio" name="prioridad" value="Media">
+                Media
+            </label>
+            <label>
+                <input type="radio" name="prioridad" value="Baja">
+                Baja
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label for="descripcion">
+            📄 Descripción del Incidente
+        </label>
+
+        <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="6"
+            required></textarea>
+
+    </div>
+
+    <div class="botones">
+        <button
+            type="submit"
+            class="btn btn-primario">
+            Registrar Reporte
+        </button>
+
+        <button
+            type="reset"
+            class="btn btn-secundario">
+            Limpiar Formulario
+        </button>
+    </div>
+
+</form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 Sistema Help Desk - Universidad Técnica de Manabí
+    </p>
+
+</footer>
+</div>
+</body>
+</html>
